@@ -7,9 +7,9 @@ void SetFpsLimitExternal(float fps_limit) {
 
     uintptr_t function_address = 0x140D1EBE0; // address of BaseApp::SetFpsLimit function
 
-    uintptr_t allocated_memory = (uintptr_t)VirtualAllocEx(game->phandle, nullptr, sizeof(float), MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
+    uintptr_t allocated_memory = (uintptr_t)VirtualAllocEx(phandle, nullptr, sizeof(float), MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
     if (!allocated_memory) {
-        std::cerr << "Memory allocation failed\n";
+        std::cout << "Memory allocation failed\n";
         return;
     }
 
