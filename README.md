@@ -3,6 +3,6 @@
 - star this repository for more useful stuf
 
 # stars
-+ [X] 0 ⭐ [BaseApp::SetFpsLimit](SetFpsLimit.md)
-- [x] 10 ⭐ [a](a.md)
-- [x] 20 ⭐ [b](b.md)
+- [X] 0 ⭐ [BaseApp::SetFpsLimit](SetFpsLimit.md)
+- [ ] 10 ⭐ [a](a.md)
+- [ ] 20 ⭐ [b](b.md)
