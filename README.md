@@ -3,6 +3,8 @@
 - star this repository for more useful stuf
 
 # stars
-[X] - SetFpsLimit
+[X] SetFpsLimit
+
+
 [] 10 ⭐ - 
 [] 20 ⭐ - 
