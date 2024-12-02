@@ -15,7 +15,7 @@ void SetFpsLimitExternal(float fps_limit) {
 
     if (!WriteProcessMemory(phandle, (LPVOID)allocated_memory, &fps_limit, sizeof(float), nullptr)) {
         std::cout << "Failed to write FPS limit to memory\n";
-        VirtualFreeEx(game->phandle, (LPVOID)allocated_memory, 0, MEM_RELEASE);
+        VirtualFreeEx(phandle, (LPVOID)allocated_memory, 0, MEM_RELEASE);
         return;
     }
 
