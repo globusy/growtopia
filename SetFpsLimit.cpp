@@ -5,7 +5,7 @@ void SetFpsLimitExternal(float fps_limit) {
         return;
     }
 
-    uintptr_t function_address = 0x140D1EBE0; // address of BaseApp::SetFpsLimit function
+    uintptr_t function_address = 0x140E93B60; // address of BaseApp::SetFpsLimit function
 
     uintptr_t allocated_memory = (uintptr_t)VirtualAllocEx(phandle, nullptr, sizeof(float), MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
     if (!allocated_memory) {
@@ -29,5 +29,5 @@ void SetFpsLimitExternal(float fps_limit) {
         CloseHandle(hThread);
     }
 
-    VirtualFreeEx(game->phandle, (LPVOID)allocated_memory, 0, MEM_RELEASE);
+    VirtualFreeEx(phandle, (LPVOID)allocated_memory, 0, MEM_RELEASE);
 }
